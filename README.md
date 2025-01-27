@@ -106,5 +106,12 @@ pip install flask google-cloud-vision RPi.GPIO picamera
 6. **Email Alert**:
    - If violence is detected, the system sends an email with the subject "Violent Activity Warning" and a message indicating the detection time and severity.
 
+---
+
+## Acknowledements
+
+I would like to express my gratitude to everyone who contributed to the successful completion of this project:
+- **Open-Source Communities**: For developing and maintaining the libraries and tools used in this project, including Raspberry Pi, GoPiGo, Flask, RPi.GPIO, picamera, and Google Cloud Vision.
+- **Collaborators**: For their support and contributions to brainstorming, troubleshooting, and refining the implementation.
 
 
