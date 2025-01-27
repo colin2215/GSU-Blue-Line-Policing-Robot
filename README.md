@@ -86,22 +86,22 @@ pip install flask google-cloud-vision RPi.GPIO picamera
 ## Outputs
 
 1. **Real-Time Video Feed**:
-   - The /video endpoint provides a real-time video stream of the Raspberry Pi camera. You can access it via a web browser (e.g., http://<raspberry-pi-ip>:5000/video).
+   - The `/video` endpoint provides a real-time video stream of the Raspberry Pi camera. You can access it via a web browser (e.g., `http://<raspberry-pi-ip>:5000/video`).
 2. **Logs**:
-   - The system logs every flag event, including detection results, in the activity_log.log file.
+   - The system logs every flag event, including detection results, in the `activity_log.log` file.
      The log will contain information like:
         - Time of detection
         - Whether violent content was detected
         - Any email alerts sent
 3. **Sound Sensor Detection**:
    - The system will print to the terminal whenever noise is detected by the sensor, with messages such as:
-        - Noise Detected
-        - SOUND ALARM
-        - No Noise Detected
+        - `Noise Detected`
+        - `SOUND ALARM`
+        - `No Noise Detected`
 4. **Violence Detection**:
    - The system prints the results of violence detection for each frame:
-        - Frame <frame_name> detected as: Violence
-        - Frame <frame_name> detected as: No Violence
+        - `Frame <frame_name> detected as: Violence`
+        - `Frame <frame_name> detected as: No Violence`
    - If violence is detected in enough frames (e.g., 5 or more), the system sends an email with a warning message. 
 6. **Email Alert**:
    - If violence is detected, the system sends an email with the subject "Violent Activity Warning" and a message indicating the detection time and severity.
