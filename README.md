@@ -31,5 +31,22 @@ Developed an autonomous robot designed for public safety applications, featuring
 
 ## Software Requirements
 
+- **Python 3.x**
+- **Raspberry Pi OS** (Formerly Raspbian)
+- `picamera`:For capturing images and video from the Raspberry Pi camera.
+- `flask`:For creating the web application to stream video.
+- `threading`:For handling multi-threading (this is part of Python's standard library).
+- `smtplib & email.mime.text`:For sending emails (part of Python's standard library).
+- `RPi.GPIO`:For interacting with the GPIO pins (for the sound sensor).
+- `google-cloud-vision`:For interacting with the Google Cloud Vision API for SafeSearch detection.
+- `time & datetime`:For managing time and timestamps (these are part of Python's standard library).
+- `os`:For file and directory manipulation (part of Python's standard library).
+
+Install missing packages using:
+```bash
+pip install flask google-cloud-vision RPi.GPIO picamera
+```
+
+ ---
 
  
